@@ -16,7 +16,7 @@ export default function ThreeScene() {
             
 
 
-            const geometry = new THREE.SphereGeometry();
+            const geometry = new THREE.BoxGeometry();
             const material = new THREE.MeshBasicMaterial({ color: 0x00ffff });
             const sphere = new THREE.Mesh(geometry, material);
             scene.add(sphere);
@@ -28,7 +28,6 @@ export default function ThreeScene() {
             const renderScene = () => {
                 sphere.rotation.x += 0.01;
                 sphere.rotation.y += 0.01;
-                sphere.position.x+=0.01;
                 renderer.render(scene, camera);
                 requestAnimationFrame(renderScene);
               };
