@@ -1,5 +1,5 @@
 .animateClass {
-    animation: loading 5s linear forwards;
+    animation: loading 2s linear forwards;
     overflow: hidden;
     white-space: nowrap;
     --fit-width: 260px;
