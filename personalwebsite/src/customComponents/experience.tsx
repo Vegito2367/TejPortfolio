@@ -2,8 +2,30 @@
 import ExperienceItem from "@/customComponents/experienceItems";
 
 const experiences = [
-  { role: "Frontend Developer", company: "Tech Corp", duration: "2022 - Present", description: "Developed modern web applications using Next.js, TypeScript, and TailwindCSS." },
-  { role: "UI/UX Designer", company: "Creative Studio", duration: "2020 - 2022", description: "Designed intuitive interfaces and enhanced user experiences." }
+  { 
+    role: "Lead App Developer", 
+    company: "CyPhy Labs, Center for Design and Research (CDR)", 
+    duration: "Jun. 2024 – Present", 
+    description: "Leading the Android/iOS app development for a smart mirror product; secured a $100,000+ order. Implementing a scalable communication system for 5000+ users using Swift, Kotlin, Firebase Cloud Messaging, PostgreSQL, and Docker." 
+  },
+  { 
+    role: "Research Engineer", 
+    company: "Blakemore Lab - KU", 
+    duration: "Feb. 2024 – Present", 
+    description: "Developed data engineering pipelines to process and visualize atomic properties of 1500+ structures. Automated crystallographic analysis, reducing processing time from 6 months to 5 minutes." 
+  },
+  { 
+    role: "Software Engineering Intern", 
+    company: "Security Benefit", 
+    duration: "Jun. 2023 – Dec. 2023", 
+    description: "Automated Sailpoint access management, saving 100 hours annually. Developed and maintained ETL processes using Python and AWS (S3) to support internal and consumer applications." 
+  },
+  { 
+    role: "VP Engineering and Education", 
+    company: "KU Blockchain Institute (KUBI)", 
+    duration: "Aug. 2023 – Apr. 2024", 
+    description: "Led bi-weekly blockchain and web development workshops. Engineered smart contracts for KUBI’s DAO, logging 500+ hours of club participation." 
+  }
 ];
 
 export default function Experiences() {

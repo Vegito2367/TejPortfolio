@@ -2,8 +2,24 @@
 import ProjectCard from "@/customComponents/projectCard";
 
 const projects = [
-  { title: "Portfolio Website", description: "A sleek personal portfolio using Next.js and TailwindCSS.", techStack: ["Next.js", "TypeScript", "TailwindCSS"], link: "#" },
-  { title: "E-commerce Store", description: "Built a full-stack e-commerce platform.", techStack: ["React", "Node.js", "MongoDB"], link: "#" }
+  { 
+    title: "Optimized RFE Feature Selection with LogRes", 
+    description: "Developed a custom Logistic Regression model for binary classification on heart attack risk data, optimizing feature selection while maintaining 94% accuracy.", 
+    techStack: ["Python", "NumPy", "StandardScaler"], 
+    link: "https://github.com/Vegito2367/LogResFeatureSelection"
+  },
+  { 
+    title: "MathVenture", 
+    description: "A speed math platform that dynamically generates math problems and analytics using a custom math engine.", 
+    techStack: ["Next.js", "Supabase", "Tailwind CSS", "PostgreSQL"], 
+    link: "https://math-venture.com/"
+  },
+  { 
+    title: "Email Classifier", 
+    description: "Performed sentiment analysis on 30,000 emails using TfIDF vectorization and developed a classifier with 97.8% accuracy.", 
+    techStack: ["Python", "simpleGmail", "Sklearn", "Matplotlib", "NumPy", "Pandas"], 
+    link: "https://github.com/Vegito2367/EmailClassifier"
+  }
 ];
 
 export default function Projects() {
