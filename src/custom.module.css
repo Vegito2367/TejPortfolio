@@ -1,0 +1,51 @@
+.animateClass {
+    animation: loading 2s linear forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    --fit-width: 260px;
+}
+
+@keyframes loading {
+    /* 0% {
+        width: 0px;
+    }
+
+    20% {
+        width: calc(var(--fit-width) * 0.3);
+    }
+
+    40% {
+        width: calc(var(--fit-width) * 0.6);
+    }
+
+    60% {
+        width: calc(var(--fit-width) * 0.8);
+    }
+
+    80% {
+        width: calc(var(--fit-width) * 0.9);
+    }
+
+    100% {
+        width: var(--fit-width);
+    } */
+    0% { width: 10px; }
+    10% { width: calc(var(--fit-width) * 0.2); }
+    15% { width: calc(var(--fit-width) * 0.2); }
+    20% { width: calc(var(--fit-width) * 0.25); }
+    25% { width: calc(var(--fit-width) * 0.25); }
+    30% { width: calc(var(--fit-width) * 0.3); }
+    35% { width: calc(var(--fit-width) * 0.3); }
+    40% { width: calc(var(--fit-width) * 0.35); }
+    45% { width: calc(var(--fit-width) * 0.35); }
+    50% { width: calc(var(--fit-width) * 0.4); }
+    55% { width: calc(var(--fit-width) * 0.4); }
+    60% { width: calc(var(--fit-width) * 0.45); }
+    65% { width: calc(var(--fit-width) * 0.45); }
+    70% { width: calc(var(--fit-width) * 0.5); }
+    75% { width: calc(var(--fit-width) * 0.5); }
+    80% { width: calc(var(--fit-width) * 0.7); }
+    90% { width: calc(var(--fit-width) * 0.9); }
+    100% { width: fit-content; }
+
+}
