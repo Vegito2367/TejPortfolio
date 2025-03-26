@@ -6,13 +6,13 @@ const projects = [
     title: "Development of Cheminformatics Pipelines to analyze Crown Ethers",
     description: "Currently developing novel analysis techniques using graph theory to analyze the properties of crown ethers. This will be used to predict the binding affinity of crown ethers to various metals.",
     techStack: ["Python", "Matplotlib", "Pandas", "NumPy", "Plotly"],
-    link: ""
+    link: "https://github.com/Vegito2367/CrownEtherProject"
   },
   {
     title: "Analysis of TFSI Crystallographic Structures",
     description: "Developed data engineering pipelines to efficiently process and visualize atomic properties of 1500+ structures. Reduced analysis time from 6 months to 5 minutes.",
     techStack: ["Python", "Matplotlib", "Pandas", "NumPy", "Plotly"],
-    link: ""
+    link: "https://tfsi-research.vercel.app"
   },
   {
     title: "Optimized RFE Feature Selection with LogRes",
