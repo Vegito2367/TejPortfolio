@@ -18,7 +18,6 @@ const HeroSection = () => {
         items-center justify-between space-y-8 md:space-y-0 
         md:space-x-12 lg:space-x-16">
 
-                {/* Text Content */}
                 <motion.div
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -27,8 +26,8 @@ const HeroSection = () => {
                         delay: 0.3,
                         ease: "easeOut"
                     }}
-                    className="w-full md:w-3/5 text-center md:text-left 
-            flex flex-col justify-center space-y-4"
+                    className="w-full md:w-3/5 text-center
+            flex flex-col justify-center items-center space-y-4"
                 >
                     <h1 className="text-4xl md:text-5xl lg:text-6xl 
             font-bold text-white leading-tight">
@@ -47,14 +46,19 @@ const HeroSection = () => {
                             target="_blank"
                             className="hover:scale-110 transition-all duration-300"
                         >
-                            <img src="/github.svg" alt="LinkedIn" width="48" height="48"/>
+                            <img src="/github.svg" alt="LinkedIn" width="48" height="48" />
                         </a>
                         <a
                             href="https://linkedin.com/in/tej-gumaste/"
                             target="_blank"
                             className="hover:scale-110 transition-all duration-300"
                         >
-                            <img src="/linkedin.svg" alt="LinkedIn" width="48" height="48"/>
+                            <img src="/linkedin.svg" alt="LinkedIn" width="48" height="48" />
+                        </a>
+                    </div>
+                    <div className='w-3/5 text-2xl font-mono bg-orange-500 rounded-lg mt-4 p-2 text-center text-white fond-bold hover:bg-orange-400 transition-all duration-300 hover:scale-105'>
+                        <a target='_blank' href='https://drive.google.com/file/d/1Feayugu4WImvMF37ydyzgUN5sTIExFnQ/view?usp=sharing'>
+                            Resume
                         </a>
                     </div>
                 </motion.div>
