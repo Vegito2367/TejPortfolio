@@ -23,8 +23,6 @@ const HeroSection = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{
                         duration: 0.6,
-                        delay: 0.3,
-                        ease: "easeOut"
                     }}
                     className="w-full md:w-3/5 text-center
             flex flex-col justify-center items-center space-y-4"
@@ -68,8 +66,6 @@ const HeroSection = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{
                         duration: 0.6,
-                        delay: 0.4,
-                        ease: "easeOut"
                     }}
                     className="w-full md:w-2/5 flex justify-center items-center"
                 >
