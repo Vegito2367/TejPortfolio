@@ -2,6 +2,14 @@
 import ProjectCard from "@/customComponents/projectCard";
 
 const projects = [
+
+    { 
+      title: "Decentralized Artificial Intelligence Marketplace (DAIM)", 
+      description: "A platform where developers can share open-source AI models without losing ownership or fearing platform obsolescence. DAIM provides structured access to AI models with performance metrics for seamless integration and customization. Contributors can securely publish and attribute their work while leveraging generative AI for enhanced model insights.", 
+      techStack: ["Pinata IPFS", "Next.js", "Autonomy API", "TypeScript", "Google Gemini API","Tailwind CSS","Ethers.js"], 
+      link: "https://github.com/Vegito2367/DAIM" 
+    },
+  
   {
     title: "Development of Cheminformatics Pipelines to analyze Crown Ethers",
     description: "Currently developing novel analysis techniques using graph theory to analyze the properties of crown ethers. This will be used to predict the binding affinity of crown ethers to various metals.",
