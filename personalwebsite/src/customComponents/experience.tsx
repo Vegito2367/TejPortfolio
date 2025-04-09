@@ -3,12 +3,6 @@ import ExperienceItem from "@/customComponents/experienceItems";
 
 const experiences = [
   { 
-    role: "Lead App Developer", 
-    company: "CyPhy Labs, Center for Design and Research (CDR)", 
-    duration: "Jun. 2024 – Present", 
-    description: "Leading the Android/iOS app development for a smart mirror product; secured a $100,000+ order. Implementing a scalable communication system for 5000+ users using Swift, Kotlin, Firebase Cloud Messaging, PostgreSQL, and Docker." 
-  },
-  { 
     role: "Research Engineer", 
     company: "Blakemore Lab - KU", 
     duration: "Feb. 2024 – Present", 

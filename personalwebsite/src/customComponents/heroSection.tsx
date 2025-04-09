@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const HeroSection = () => {
+    const router = useRouter();
     return (
         <motion.section
             initial={{ opacity: 0, scale: 0.95 }}
@@ -54,8 +56,8 @@ const HeroSection = () => {
                             <img src="/linkedin.svg" alt="LinkedIn" width="48" height="48" />
                         </a>
                     </div>
-                    <div className='w-3/5 text-2xl font-mono bg-orange-500 rounded-lg mt-4 p-2 text-center text-white fond-bold hover:bg-orange-400 transition-all duration-300 hover:scale-105'>
-                        <a target='_blank' href='https://drive.google.com/file/d/1Feayugu4WImvMF37ydyzgUN5sTIExFnQ/view?usp=sharing'>
+                    <div onClick={()=>{window.open("https://drive.google.com/file/d/1EWv_GDq6dGQP5O2kkcMJ44rhGb2B34YS/view?usp=sharing",'_blank')}} className='w-3/5 text-2xl font-mono bg-orange-500 rounded-lg mt-4 p-2 text-center text-white fond-bold hover:bg-orange-400 transition-all duration-300 hover:scale-105'>
+                        <a target='_blank' href='https://drive.google.com/file/d/1EWv_GDq6dGQP5O2kkcMJ44rhGb2B34YS/view?usp=sharing'>
                             Resume
                         </a>
                     </div>
