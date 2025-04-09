@@ -5,8 +5,8 @@ const projects = [
     { 
       title: "EirAI", 
       description: "A service designed to reduce administrative bloat for healthcare professionals and medical coders. EirAI converts patient-doctor conversations into structured SOAP notes using speech-to-text, identifies relevant ICD codes, and cross-references a dataset of prior insurance approvals to suggest the most approvable treatment paths. The system indexes ~73,000 ICD codes and simulates real-world conditions using a dataset with over 1.5 million rows.", 
-      techStack: ["Python", "Whisper", "GPT-4", "Sklearn", "Pandas", "Next.js"], 
-      link: "#" ,
+      techStack: ["Python", "Whisper", "GPT-4", "Google Gemini","PostgreSQL", "Next.js", "Framer-Motion", "Tailwind CSS"], 
+      link: "https://github.com/aelxxs/EirAI",
       wins: "Theme Track 2nd Place - HackKU 2025"
     },
     { 
