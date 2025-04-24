@@ -16,7 +16,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: 'easeInOut' }}
-            className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gradient-to-br from-gray-900 to-black px-6 md:px-12 lg:px-24 py-12"
+            className="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gradient-to-br from-gray-900 to-black px-6 md:px-12 lg:px-24 py-12 cursor-none"
         >
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12 lg:space-x-16">
 
@@ -26,7 +26,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.6 }}
                     className="w-full md:w-3/5 text-center md:text-left flex flex-col justify-center items-center md:items-start space-y-4"
                 >
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                         Hey there, I&apos;m <span className="text-orange-400">Tej Gumaste</span>!
                     </h1>
 

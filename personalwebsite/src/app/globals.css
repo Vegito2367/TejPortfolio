@@ -32,3 +32,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+a:hover{
+  cursor: none;
+}
+
+
+button{
+  cursor: none;
+}
