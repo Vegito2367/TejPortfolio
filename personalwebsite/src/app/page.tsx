@@ -72,7 +72,7 @@ export default function Home() {
         {!showMainContent && (<Loading callback={handleLoadingEnd} />)}
       </AnimatePresence>
       {showMainContent && (
-        <div>
+        <div className="bg-gradient-to-br from-gray-900 to-black">
 
           <HeroSection />
 
