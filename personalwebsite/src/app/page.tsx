@@ -37,8 +37,6 @@ export default function Home() {
           top: `${followPos.y}px`,
           left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
-          transition: "all",
-          transitionDuration: "0.01s",
           pointerEvents: "none",
           zIndex: 50
         }}
@@ -49,8 +47,6 @@ export default function Home() {
           top: `${followPos.y}px`,
           left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
-          transition: "all",
-          transitionDuration: "0.013s",
           pointerEvents: "none",
           zIndex: 49
         }}
@@ -61,8 +57,6 @@ export default function Home() {
           top: `${followPos.y}px`,
           left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
-          transition: "all",
-          transitionDuration: "0.016s",
           pointerEvents: "none",
           zIndex: 48
         }}

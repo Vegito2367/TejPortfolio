@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tej Gumaste",
   description: "Tej's Portfolio",
+  icons:{
+    icon:"/icon.png",
+    apple: "/icon.png",
+    
+  }
 };
 
 export default function RootLayout({
