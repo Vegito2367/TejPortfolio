@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import PortfolioNavButton from './porfolionavigator';
 
 const tabs = [
     { key: 'work', label: "Working On" },
@@ -138,6 +139,7 @@ export default function HeroSection() {
                             Resume
                         </a>
                     </div>
+                    <PortfolioNavButton/>
                 </motion.div>
 
                 <motion.div
