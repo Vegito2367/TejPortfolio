@@ -69,6 +69,10 @@ export default function Goals() {
             <p className="text-gray-300 leading-relaxed">
               I will be successful if I contribute at least one functional tool or backend improvement that is approved and merged into the team’s main codebase by August 9. Success will be determined by the completion of this feature, feedback from code reviewers, and confirmation from my mentor or team lead that it improves workflow or system performance.
             </p>
+            <h3 className="text-xl text-gray-300 font-bold mb-1">Reflection:</h3>
+            <p className="text-gray-300 leading-relaxed">
+              I am happy to say that I have completed this objective. As part of my internship project, I am assigned to integrate Cross River Bank wire payments into the main product, which involves improving existing software written for ACH integrations with Cross River Bank. At the time of the objective reflection assignment, I have successfully got my improvements reviewed, approved and merged into the main codebase.
+            </p>
           </div>
 
           {/* Objective 2 */}
@@ -87,6 +91,10 @@ export default function Goals() {
             <p className="text-gray-300 leading-relaxed">
               I will be successful if I complete at least three pull requests addressing code clarity or documentation, and each is approved by the team and merged into the main branch by August 9. These will be verified through GitHub pull request history and confirmed by my mentor or code reviewers.
             </p>
+            <h3 className="text-xl text-gray-300 font-bold mb-1">Reflection:</h3>
+            <p className="text-gray-300 leading-relaxed">
+              I have partially achieved this aim. I have provided improvements to the readability and quality of software written, but those changes were more on the frontend \(UI\) rather than backend services. One reason for that being the backend services are written using Scala, a language that I have not used before this internship. Thus, in the short time frame of my internship, I did not feel comfortable attempting to improve existing code, although I did work on new software for the product.
+            </p>
           </div>
 
           {/* Objective 3 */}
@@ -104,6 +112,10 @@ export default function Goals() {
             <h3 className="text-xl text-gray-300 font-bold mb-1">Evaluation:</h3>
             <p className="text-gray-300 leading-relaxed">
               I will be successful if I complete one verified deployment to staging or production that follows Gemini’s internal protocols. My team lead will evaluate the deployment and confirm it meets all requirements and is executed without errors or rollbacks.
+            </p>
+            <h3 className="text-xl text-gray-300 font-bold mb-1">Reflection:</h3>
+            <p className="text-gray-300 leading-relaxed">
+              I am happy to say that I am more than successful with this objective. I have not verified deployment to staging for backend changes, but also frontend and email server changes. Throughout my internship, I managed to maintain a fast pace with delivering results, while maintaining quality which helped me push changes on the frontend and backend to production.
             </p>
           </div>
         </div>
