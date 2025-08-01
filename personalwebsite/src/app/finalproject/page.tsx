@@ -52,6 +52,7 @@ export default function FinalProject() {
         <h1 className="text-5xl font-bold text-orange-400 text-center mb-6">
           Final Project
         </h1>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRx1Ihz7mpKOKwGAyFVAyGBZnNNo70vITUZbzB4MDK_an-N7wSYYeFAJcLaPiMNnncnllL7fuE_zOFB/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </section>
     </main>
   );
