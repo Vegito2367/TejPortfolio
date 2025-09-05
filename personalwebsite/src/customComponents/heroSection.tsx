@@ -139,7 +139,6 @@ export default function HeroSection() {
                             Resume
                         </a>
                     </div>
-                    <PortfolioNavButton/>
                 </motion.div>
 
                 <motion.div
