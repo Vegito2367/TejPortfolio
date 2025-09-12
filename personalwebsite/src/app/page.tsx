@@ -1,20 +1,26 @@
 "use client"
 import { AnimatePresence, motion } from "motion/react";
-import ThreeScene from "@/customComponents/threeScene";
-import Loading from "@/customComponents/loading";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Experiences from "@/customComponents/experience";
 import Projects from "@/customComponents/projects";
 import HeroSection from "@/customComponents/heroSection";
 
 
 export default function Home() {
-  const [showMainContent, setShowMainContent] = useState(false);
-  const [followPos, setFollowPos] = useState({ x: 0, y: 0 });
+  const cursorRef1 = useRef<HTMLDivElement>(null);
+  const cursorRef2 = useRef<HTMLDivElement>(null);
+  const cursorRef3 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleMouseMove(e: MouseEvent) {
-      setFollowPos({ x: e.pageX, y: e.pageY });
+      if (cursorRef1.current && cursorRef2.current && cursorRef3.current) {
+        cursorRef1.current.style.top = `${e.pageY}px`;
+        cursorRef1.current.style.left = `${e.pageX}px`;
+        cursorRef2.current.style.top = `${e.pageY}px`;
+        cursorRef2.current.style.left = `${e.pageX}px`;
+        cursorRef3.current.style.top = `${e.pageY}px`;
+        cursorRef3.current.style.left = `${e.pageX}px`;
+      }
     }
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -24,18 +30,14 @@ export default function Home() {
       window.removeEventListener('mousemove', handleMouseMove);
     }
   }, []);
-  function handleLoadingEnd() {
-    setShowMainContent(true);
-  }
 
 
   return (
 
     <div style={{ cursor: "none" }} className="flex flex-col justify-center items-center font-mono">
       <div
+        ref={cursorRef1}
         style={{
-          top: `${followPos.y}px`,
-          left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
           pointerEvents: "none",
           zIndex: 50
@@ -43,9 +45,8 @@ export default function Home() {
         className="rounded-full absolute h-3 w-3 bg-orange-200"
       />
       <div
+        ref={cursorRef2}
         style={{
-          top: `${followPos.y}px`,
-          left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
           pointerEvents: "none",
           zIndex: 49
@@ -53,19 +54,14 @@ export default function Home() {
         className="rounded-full absolute h-4 w-4 bg-orange-400"
       />
       <div
+        ref={cursorRef3}
         style={{
-          top: `${followPos.y}px`,
-          left: `${followPos.x}px`,
           transform: 'translate(-50%, -50%)',
           pointerEvents: "none",
           zIndex: 48
         }}
         className="rounded-full absolute h-5 w-5 bg-orange-600"
       />
-      <AnimatePresence>
-        {!showMainContent && (<Loading callback={handleLoadingEnd} />)}
-      </AnimatePresence>
-      {showMainContent && (
         <div className="bg-gradient-to-br from-gray-900 to-black">
 
           <HeroSection />
@@ -82,10 +78,6 @@ export default function Home() {
 
           <Projects />
         </div>
-
-
-      )}
-
     </div>
   );
 }
