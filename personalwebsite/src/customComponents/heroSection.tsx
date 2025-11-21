@@ -54,7 +54,7 @@ export default function HeroSection() {
                     </h1>
 
                     <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 leading-relaxed max-w-prose">
-                        A <strong>curious builder</strong> &amp; <strong>data-driven researcher</strong> pursuing my B.S. in Computer Science with a Mathematics minor at the University of Kansas. I solve problems at the intersection of software engineering, AI, and scientific discovery. I have my own CI/CD pipeline!!!!
+                        A <strong>curious builder</strong> &amp; <strong>data-driven researcher</strong> pursuing my B.S. in Computer Science with a Mathematics minor at the University of Kansas. I solve problems at the intersection of software engineering, AI, and scientific discovery.
                     </p>
 
                     
