@@ -115,7 +115,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.3 }}
                     className="text-gray-300 text-xl leading-relaxed"
                 >
-                    Diving deep into the mathematics of transformers and attention mechanisms. I'm also exploring reinforcement learning from human feedback (RLHF) to better understand how modern LLMs are fine-tuned.
+                    I have been getting into linux development. If thistext is visible on the website then I just made a custom CI/CD pipeline!!!!!!
                 </motion.div>
             )}
 
