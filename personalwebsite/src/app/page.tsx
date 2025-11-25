@@ -1,5 +1,4 @@
 "use client";
-import { p } from "framer-motion/client";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, useMotionValue } from "motion/react";
@@ -135,7 +134,100 @@ export default function Home() {
             </div>
           </div>
         </motion.section>
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+            <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+            Projects
+          </h3>
+
+          {/* Changed from Grid to Timeline Layout to match Experience */}
+          <div className="space-y-12 pl-8 ml-3 relative bg-grid-small-neutral-900/20">
+            <ProjectItem
+              title="LookSmith"
+              link="https://github.com/Vegito2367/LookSmith"
+              tag="HackHarvard 2025"
+              desc="Assistive 3D modelling system. Builds 3D shapes using facial expressions via MediaPipe/OpenCV and Godot."
+            />
+
+            <ProjectItem
+              title="DAIM"
+              link="https://github.com/Vegito2367/DAIM"
+              tag="Midwest Blockathon 2025"
+              desc="Decentralized AI MarketPlace. Full-stack Web3 platform for open-source AI models using Pinata, RainbowKit, and NextJS."
+            />
+
+            <ProjectItem
+              title="EirAI"
+              link="https://github.com/Vegito2367/EirAI"
+              tag="HackKU 2025"
+              desc="Medical tool that records visits, generates SOAP notes, and predicts insurance billing codes with confidence scores."
+            />
+
+            <ProjectItem
+              title="MathVenture"
+              link="https://math-venture.com"
+              tag="Personal"
+              desc="Zetamac-inspired math engine to build mental math skills with detailed analytical reports."
+            />
+
+            <ProjectItem
+              title="TejCICD"
+              tag="In Progress"
+              desc="Building a custom CICD action for this portfolio website utilizing GitHub webhooks."
+            />
+          </div>
+        </motion.section>
       </div>
+    </div>
+  );
+}
+
+function ProjectItem({
+  title,
+  link,
+  desc,
+  tag,
+  hackwin,
+}: {
+  title: string;
+  link?: string;
+  desc: string;
+  tag: string;
+  hackwin?: boolean;
+}) {
+  return (
+    <div className="relative group">
+      {/* Timeline Dot */}
+
+      <div className="absolute -left-[39px] top-0 bottom-0 w-0.5 bg-neutral-800 group-hover:bg-orange-500 transition-colors"></div>
+      <div className="absolute -left-[43px] top-1 h-3 w-3 rounded-full bg-neutral-900 border border-neutral-700 group-hover:border-orange-500 transition-colors" />
+      {/* Title & Link */}
+      <div className="flex flex-wrap items-baseline gap-3 mb-2">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`text-xl font-semibold text-neutral-100 transition-colors ${link ? "hover:text-orange-400 cursor-none" : "cursor-default"}`}
+        >
+          {title}
+          <span>
+            <img
+              src="pop.svg"
+              className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-neutral-400 h-4 w-4 inline-block ml-2"
+            />
+          </span>
+        </a>
+        <span className="text-xs font-mono text-neutral-500 border border-neutral-800 px-2 py-0.5 rounded bg-neutral-900/50">
+          {tag}
+        </span>
+      </div>
+
+      {/* Description */}
+      <p className="text-neutral-400 leading-relaxed">{desc}</p>
     </div>
   );
 }
