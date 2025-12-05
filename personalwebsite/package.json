@@ -5,27 +5,33 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "sbuild":"next build && next start",
+    "sbuild": "next build && next start",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-three/fiber": "^9.0.4",
     "framer-motion": "^12.4.7",
     "motion": "^12.4.7",
-    "next": "15.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "react-intersection-observer": "^9.16.0",
     "three": "^0.174.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "@types/three": "^0.174.0",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.7",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
   }
 }
