@@ -71,7 +71,7 @@ const projectsList = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-gradient-to-br font-mono from-gray-900 to-black animated-gradient">
+    <div className="bg-gradient-to-br font-mono from-gray-900 to-black animated-gradient h-full">
       <section id="projects" className="py-12 mx-auto max-w-6xl">
         <p className="text-4xl">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
