@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import React, { useState, useEffect, useRef } from "react";
 import { useSpring, useMotionValue } from "motion/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Home() {
   // Cursor Logic - Using Springs for smooth trailing effect
   const mouseX = useMotionValue(-100);
@@ -64,17 +65,30 @@ export default function Home() {
             CS & Math @ University of Kansas
           </h2>
           <div className="flex flex-wrap gap-4 text-sm text-neutral-500">
-            <span className="hover:text-orange-400 transition-colors cursor-none">
-              @Vegito2367
-            </span>
+            <Link
+              href="https://github.com/Vegito2367"
+              target="_blank"
+              className="hover:text-orange-400 transition-colors cursor-none"
+            >
+              github.com/Vegito2367
+            </Link>
             <span>•</span>
-            <span className="hover:text-orange-400 transition-colors cursor-none">
-              @seksierthanyou
-            </span>
+            <Link
+              href="https://x.com/TejG17"
+              target="_blank"
+              className="hover:text-orange-400 transition-colors cursor-none"
+            >
+              x.com/TejG17
+            </Link>
+
             <span>•</span>
-            <span className="hover:text-orange-400 transition-colors cursor-none">
-              @TejG17
-            </span>
+            <Link
+              href="https://www.linkedin.com/in/tej-gumaste/"
+              target="_blank"
+              className="hover:text-orange-400 transition-colors cursor-none"
+            >
+              linkedin/tej-gumaste/
+            </Link>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-neutral-400 mt-8">
             Hello, I am a 21-year-old computer science student with a fondness
