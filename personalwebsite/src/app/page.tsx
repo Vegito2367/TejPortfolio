@@ -131,7 +131,7 @@ export default function Home() {
                 crystal structures.
               </p>
               <div className="mt-2 inline-block px-3 py-1 bg-neutral-900 border border-neutral-800 rounded text-xs text-orange-300">
-                Peer Review in Progress: Molecules Journal
+                Published: Molecules Journal
               </div>
             </div>
           </div>
