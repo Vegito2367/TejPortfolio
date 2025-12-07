@@ -53,7 +53,7 @@ const projectsList = [
     title: "Decentralized Artificial Intelligence Marketplace (DAIM)",
     description:
       "A platform where developers can share open-source AI models without losing ownership or fearing platform obsolescence. DAIM provides structured access to AI models with performance metrics for seamless integration and customization. Contributors can securely publish and attribute their work while leveraging generative AI for enhanced model insights.",
-
+    tag: "Blockchain Project"
     link: "https://github.com/Vegito2367/DAIM",
     wins: "Autonomys AI Track Winner - Midwest Blockathon 2025",
     key: 7,
