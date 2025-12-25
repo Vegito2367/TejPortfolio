@@ -1,7 +1,7 @@
 "use client";
 import { ProjectItem } from "@/customComponents/projectItem";
-import { AnimatePresence, motion } from "motion/react";
-import React, { useState, useEffect, useRef } from "react";
+import { motion } from "motion/react";
+import { useEffect } from "react";
 import { useSpring, useMotionValue } from "motion/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -144,9 +144,31 @@ export default function Home() {
                 parses crystallographic information files (CIFs) for inorganic
                 crystal structures.
               </p>
-              <div className="mt-2 inline-block px-3 py-1 bg-neutral-900 border border-neutral-800 rounded text-xs text-orange-300">
-                Published: Molecules Journal
-              </div>
+              <Link
+                href="https://www.mdpi.com/1420-3049/31/1/18"
+                target="_blank"
+                className="group mt-2 inline-flex items-center gap-2 px-3 py-1 bg-neutral-900 border border-neutral-800 rounded text-xs text-neutral-400 hover:border-orange-300/50 transition-all"
+              >
+                <span>
+                  Published:{" "}
+                  <span className="text-orange-300 group-hover:underline">
+                    Molecules Journal
+                  </span>
+                </span>
+                <svg
+                  className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
         </motion.section>
