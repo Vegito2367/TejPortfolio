@@ -1,7 +1,7 @@
 "use client";
 import { ProjectItem } from "@/customComponents/projectItem";
 import { motion } from "motion/react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSpring, useMotionValue } from "motion/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -30,6 +30,18 @@ export default function Home() {
     return () => window.removeEventListener("mousemove", moveCursor);
   }, [mouseX, mouseY]);
 
+  const [isHovering, setIsHovering] = useState(false);
+
+  useEffect(() => {
+    const handleHover = (e) => {
+      const target = e.target.closest("a, button, .hover-target");
+      setIsHovering(!!target);
+    };
+
+    window.addEventListener("mouseover", handleHover);
+    return () => window.removeEventListener("mouseover", handleHover);
+  }, []);
+
   return (
     <div
       style={{ cursor: "none" }}
@@ -37,15 +49,15 @@ export default function Home() {
     >
       <motion.div
         style={{ translateX: x1, translateY: y1 }}
-        className="fixed top-0 left-0 h-2 w-2 bg-orange-200 rounded-full pointer-events-none z-50 mix-blend-difference"
+        className={`fixed top-0 left-0 h-2 w-2 ${isHovering ? "bg-blue-200" : "bg-orange-200"} rounded-full pointer-events-none z-50 mix-blend-difference`}
       />
       <motion.div
         style={{ translateX: x2, translateY: y2 }}
-        className="fixed top-0 left-0 h-4 w-4 border border-orange-400/50 rounded-full pointer-events-none z-40 -ml-1 -mt-1"
+        className={`fixed top-0 left-0 h-4 w-4 border ${isHovering ? "border-blue-400/50" : "border-orange-400/50"} rounded-full pointer-events-none z-40 -ml-1 -mt-1`}
       />
       <motion.div
         style={{ translateX: x3, translateY: y3 }}
-        className="fixed top-0 left-0 h-8 w-8 bg-orange-600/10 rounded-full pointer-events-none z-30 blur-sm -ml-3 -mt-3"
+        className={`fixed top-0 left-0 h-8 w-8 ${isHovering ? "bg-blue-600/10" : "bg-orange-600/10"} rounded-full pointer-events-none z-30 blur-sm -ml-3 -mt-3`}
       />
 
       <div className="max-w-4xl mx-auto px-6 py-20 md:py-32">
@@ -128,7 +140,7 @@ export default function Home() {
 
             <div className="relative group">
               <div className="absolute -left-[39px] top-1 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-950 group-hover:border-orange-500 transition-colors" />
-              <h4 className="text-xl font-semibold text-neutral-100 group-hover:text-orange-400 transition-colors">
+              <h4 className="text-xl font-semibold text-neutral-100 transition-colors">
                 Research Engineer
               </h4>
               <p className="text-sm text-neutral-500 mb-2">Blakemore Lab KU</p>
@@ -151,7 +163,7 @@ export default function Home() {
               >
                 <span>
                   Published:{" "}
-                  <span className="text-orange-300 group-hover:underline">
+                  <span className="text-orange-300 hover:underline">
                     Molecules Journal
                   </span>
                 </span>
@@ -196,6 +208,7 @@ export default function Home() {
               title="TejCICD"
               tag="In Progress"
               desc="Building a custom CICD action for this portfolio website utilizing GitHub webhooks."
+              link="https://github.com/CustomCICD"
             />
 
             <ProjectItem
