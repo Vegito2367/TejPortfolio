@@ -2,6 +2,21 @@
 import { ProjectItem } from "@/customComponents/projectItem";
 const projectsList = [
   {
+    title: "NexusPay",
+    description:
+      "NexusPay is a full-stack solution for modern retail, enabling seamless, contactless crypto payments using NFC technology. Built with Next.js, Tailwind CSS, and Node.js, it offers a secure and user-friendly interface for both customers and merchants. The system integrates with popular crypto wallets and provides real-time transaction processing, making it easy for retailers to adopt cryptocurrency as a payment method.",
+    tag: "Full-Stack/Web3 Development",
+    link: "https://github.com/Vegito2367/blockathon26",
+    key: 0,
+  },
+  {
+    title: "BlitzArena",
+    description:"BlitzArena is a high-speed, gasless, on-chain battle royale game built for the **Monad** blockchain. It features a 24x24 grid where players compete for the highest score through movement-based combat.",
+    tag: "Open source contribution",
+    link: "https://github.com/Vegito2367/blitzHack",
+    key: 1,
+  },
+  {
     title: "Analysis of TFSI Crystallographic Structures",
     description:
       "Developed data engineering pipelines to efficiently process and visualize atomic properties of 1500+ structures. Reduced analysis time from 6 months to 5 minutes.",

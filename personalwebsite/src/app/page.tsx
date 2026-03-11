@@ -22,7 +22,7 @@ export default function Home() {
   const y3 = useSpring(mouseY, springConfig3);
 
   useEffect(() => {
-    const moveCursor = (e: MouseEvent) => {
+    function moveCursor(e: MouseEvent) {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     };
@@ -33,10 +33,14 @@ export default function Home() {
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    const handleHover = (e) => {
-      const target = e.target.closest("a, button, .hover-target");
-      setIsHovering(!!target);
-    };
+    function handleHover(e: Event) {
+      const target = e.target;
+      const hovered = target instanceof Element
+        ? target.closest("a, button, .hover-target")
+        : null;
+
+      setIsHovering(!!hovered);
+    }
 
     window.addEventListener("mouseover", handleHover);
     return () => window.removeEventListener("mouseover", handleHover);
@@ -205,10 +209,17 @@ export default function Home() {
           {/* Changed from Grid to Timeline Layout to match Experience */}
           <div className="space-y-12 pl-8 ml-3 relative bg-grid-small-neutral-900/20">
             <ProjectItem
-              title="TejCICD"
-              tag="In Progress"
-              desc="Building a custom CICD action for this portfolio website utilizing GitHub webhooks."
-              link="https://github.com/CustomCICD"
+              title="NexusPay"
+              tag="Midwest Blockathon 2026"
+              desc="NexusPay is a full-stack solution for modern retail, enabling seamless, contactless crypto payments using NFC technology. Built with Next.js, Tailwind CSS, and Node.js, it offers a secure and user-friendly interface for both customers and merchants. The system integrates with popular crypto wallets and provides real-time transaction processing, making it easy for retailers to adopt cryptocurrency as a payment method."
+              link="https://github.com/Vegito2367/blockathon26"
+            />
+
+            <ProjectItem
+              title="BlitzArena"
+              link="https://github.com/Vegito2367/blockathon26"
+              tag="Monad Blitz Denver"
+              desc="BlitzArena is a high-speed, gasless, on-chain battle royale game built for the Monad blockchain. It features a 24x24 grid where players compete for the highest score through movement-based combat."
             />
 
             <ProjectItem
