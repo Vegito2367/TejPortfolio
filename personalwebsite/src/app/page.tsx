@@ -107,10 +107,12 @@ export default function Home() {
             </Link>
           </div>
           <p className="max-w-2xl text-lg leading-relaxed text-neutral-400 mt-8">
-            Hello, I am a 21-year-old computer science student with a fondness
+            Hello, I am a young computer science graduate with a fondness
             for programming. I believe that any programming language is only as
             important as the problem it solves. I plan to keep trying new things
             throughout my career.
+
+            Right now I'm working on building a personalized budgeting app for myself.
           </p>
         </motion.section>
 
@@ -126,6 +128,18 @@ export default function Home() {
             Experience
           </h3>
           <div className="space-y-12 border-l border-neutral-800 pl-8 ml-3 relative">
+            <div className="relative group">
+              <div className="absolute -left-[39px] top-1 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-950 group-hover:border-orange-500 transition-colors" />
+              <h4 className="text-xl font-semibold text-neutral-100 group-hover:text-orange-400 transition-colors">
+                Software Engineer
+              </h4>
+              <p className="text-sm text-neutral-500 mb-2">
+                June 2026 - Present • Gemini Exchange • NYC
+              </p>
+              <p className="text-neutral-400 leading-relaxed">
+                Building and breaking payment rails.
+              </p>
+            </div>
             <div className="relative group">
               <div className="absolute -left-[39px] top-1 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-950 group-hover:border-orange-500 transition-colors" />
               <h4 className="text-xl font-semibold text-neutral-100 group-hover:text-orange-400 transition-colors">
@@ -208,18 +222,18 @@ export default function Home() {
           </p>
           {/* Changed from Grid to Timeline Layout to match Experience */}
           <div className="space-y-12 pl-8 ml-3 relative bg-grid-small-neutral-900/20">
+
+          <ProjectItem
+              title="NexusAid"
+              link="https://github.com/bhumikaguptaa/NexusAid"
+              tag="HackKU 2026"
+              desc="NexusAID is an end-to-end, blockchain-powered humanitarian financial pipeline designed to eradicate the 'last-mile' problem in crisis zones"
+            />
             <ProjectItem
               title="NexusPay"
               tag="Midwest Blockathon 2026"
-              desc="NexusPay is a full-stack solution for modern retail, enabling seamless, contactless crypto payments using NFC technology. Built with Next.js, Tailwind CSS, and Node.js, it offers a secure and user-friendly interface for both customers and merchants. The system integrates with popular crypto wallets and provides real-time transaction processing, making it easy for retailers to adopt cryptocurrency as a payment method."
+              desc="NexusPay is a full-stack solution for modern retail, enabling seamless, contactless crypto payments using NFC technology."
               link="https://github.com/Vegito2367/blockathon26"
-            />
-
-            <ProjectItem
-              title="BlitzArena"
-              link="https://github.com/Vegito2367/blockathon26"
-              tag="Monad Blitz Denver"
-              desc="BlitzArena is a high-speed, gasless, on-chain battle royale game built for the Monad blockchain. It features a 24x24 grid where players compete for the highest score through movement-based combat."
             />
 
             <ProjectItem
